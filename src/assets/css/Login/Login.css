@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container-login {
+  background-color: #2C4291;
+  height: 100vh; /* Garante que a div ocupe pelo menos a altura total da viewport */
+  display: flex;  /*Usa flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  width: 100%; /* Garante que o container ocupe 100% da largura */
+  max-width: 100%; /* Garante que o container não ultrapasse a largura disponível */
+  padding: 0 15px; /* Adiciona um pequeno padding para evitar que o conteúdo toque as bordas */
+}
+
+.img-fluid {
+  width: 600px; /* Define a largura máxima da imagem */
+  margin-bottom: 45px;
+}
+
+.form-login {
+  /*background-color: white; */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  width: 60%;
+  margin-left: -23%;
+}
+
+.form-control {
+  margin-bottom: 23px;
+}
+
+.form-login button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-check label{
+  color: white;
+}
+
+@media screen and (max-width: 980px){
+  .form-login {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .form-login {
+    /*background-color: white; */
+    padding: 20px;
+    width: auto;
+    margin: 10px;
+  }
+}

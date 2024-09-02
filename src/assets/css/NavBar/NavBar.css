@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+.navbar {
+    background-color: #2C4291; /* Cor personalizada */
+  }
+
+.navbar-toggler{
+    background-color: white;
+}
+
+.d-inline-block{
+    width: 130px;
+    height: 40px;
+}
+
+.offcanvas-body{
+    background-color: #2C4291;
+}
+
+.navbar-nav {
+    gap: 60px; /* Espaçamento de 20px entre os itens */
+    margin-right: 50px;
+  }
+ 
+.nav-link {
+    color: #ffffff; /* Cor padrão dos links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    position: relative; /* Para posicionar o pseudo-elemento */
+    padding: 10px 15px; /* Adiciona algum espaço ao redor do texto */
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+    font-weight: bold;
+    display: inline-block;
+}
+
+.nav-link::before {
+    content: ''; /* Cria um pseudo-elemento */
+    position: absolute; /* Posiciona o pseudo-elemento relativo ao link */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px; 
+    background-color: #ffffff; /* Cor da linha de fundo */
+    transform: scaleX(0); /* Inicialmente oculta */
+    transform-origin: bottom right; /* Origem da transformação */
+    transition: transform 0.3s; /* Transição suave para o efeito de linha */
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1); /* Mostra a linha ao passar o mouse */
+    transform-origin: bottom left; /* Altera a origem da transformação */
+}
+
+.nav-link:hover {
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo semitransparente ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Sombra suave */
+    border-radius: 5px;
+}
+
+.nav-link.active::before {
+    transform: scaleX(1); /* Mostra a linha para o link ativo */
+    transform-origin: bottom left; /* Mantém a origem da transformação */
+}
+
+.nav-link.active {
+    color: #ffffff !important; /* Cor do texto do link ativo */
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo semitransparente para o link ativo */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Sombra suave para o link ativo */
+    border-radius: 5px;
+}
+
+.offcanvas-body ul.teste {
+    gap: 10px; /* Diminui o espaçamento entre os itens da lista */
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.offcanvas {
+    width: 350px !important; /* Define a largura desejada */
+}
+
+/*.offcanvas-body ul.navbar-nav button {
+    width: 320px;
+}*/
+
+@media (max-width: 628px) {
+    .navbar-nav {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        position: fixed; /* Fixa os itens no fundo da página */
+        bottom: 0; /* Posiciona-os no fundo */
+        left: 0;
+        right: 0;
+        background-color: #2C4291; /* Cor de fundo para o "footer" */
+        padding: 1px 0;
+        margin: 0;
+        width: 100%;
+        justify-content: center; /* Centraliza os itens */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1px; /* Espaçamento entre os itens */
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center; /* Centraliza o texto dos links */
+        width: 100%; /* Faz os links ocuparem toda a largura disponível */
+    }
+    
+    /* Ajuste a altura do offcanvas para evitar sobreposição 
+    .offcanvas {
+        top: auto;
+        bottom: 60px; /* Para evitar sobreposição com o "footer"
+    }
+    */
+    .offcanvas-body ul.teste {
+        gap: 10px; /* Diminui o espaçamento entre os itens da lista */
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    
+    .offcanvas {
+        width: 280px !important; /* Define a largura desejada */
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-nav {
+       gap: 10px;
+    }
+    
+    .offcanvas-body ul.teste {
+        padding: 0 0px;
+    }
+    
+    .offcanvas {
+        width: 220px !important; /* Define a largura desejada */
+    }
+}
