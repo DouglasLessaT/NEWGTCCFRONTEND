@@ -1,0 +1,46 @@
+.container-sm{
+    padding: 105px 120px;
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisa input {
+    width: 400px;
+    border-color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+}
+
+.pesquisa button{
+    margin-bottom: auto;
+    border-color: rgb(0, 0, 0);
+}
+
+thead th {
+    text-align: center;
+    border-color: rgb(0, 0, 0);
+}
+
+tbody tr {
+    text-align: center;
+}
+
+@media screen and (max-width: 992px){
+    .container-sm{
+        padding: 105px 1px;
+    }
+  }
+
+  @media screen and (max-width: 510px){
+    .pesquisa {
+        padding: 0px 50px;
+    }
+  }
