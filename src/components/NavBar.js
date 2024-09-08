@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import logonav from '../../src/assets/img/Logo_nav.png';
 import '../../src/assets/css/NavBar/NavBar.css'
 import React, { useState } from 'react';
@@ -14,37 +15,37 @@ function NavBar() {
         <nav class="navbar fixed-top">
             <div class="container-fluid">
                 {/*<div class="navbar-brand">*/}
-                <a href="#">
+                <Link to="/dash-bancas">
                     <img src={logonav} alt="Logo" class="d-inline-block align-text-top" />
-                </a>
+                </Link>
                 {/*</div>*/}
                 <ul class="navbar-nav ms-auto d-flex flex-row">
                     <li class="nav-item">
-                        <a
+                        <Link
                             className={`nav-link ${activeLink === 'BANCAS' ? 'active' : ''}`}
-                            href="#bancas"
+                            to="/dash-bancas"
                             onClick={() => handleLinkClick('BANCAS')}
                         >
                             BANCAS
-                        </a>
+                        </Link>
                     </li>
                     <li class="nav-item">
-                        <a
+                        <Link
                             className={`nav-link ${activeLink === 'TCCS' ? 'active' : ''}`}
-                            href="#tccs"
+                            to="/dash-tcc"
                             onClick={() => handleLinkClick('TCCS')}
                         >
                             TCCS
-                        </a>
+                        </Link>
                     </li>
                     <li class="nav-item">
-                        <a
+                        <Link
                             className={`nav-link ${activeLink === 'SALAS' ? 'active' : ''}`}
-                            href="#salas"
+                            to="/dash-salas"
                             onClick={() => handleLinkClick('SALAS')}
                         >
                             SALAS
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <button
@@ -74,8 +75,8 @@ function NavBar() {
                     </div>
                     <div class="offcanvas-body">
                         <ul class="teste justify-content-end flex-grow-1 d-flex">
-                            <button type="button" class="btn btn-danger">Danger</button>
-                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-danger">Cadastro Aluno</button>
+                            <button type="button" class="btn btn-danger">Cadastro Tcc</button>
                         </ul>
                     </div>
                 </div>

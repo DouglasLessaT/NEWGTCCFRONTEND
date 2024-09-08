@@ -7,13 +7,18 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 import Login from './pages/Login/Login.js';
+import Dashb_Bancas from './pages/DashBoard/DashBancas.js';
+import Dashb_Tcc from './pages/DashBoard/DashTcc.js';
+import Dashb_Salas from './pages/DashBoard/DashSalas.js';
 import CadastroAluno from './pages/CadastroAluno/CadastroAluno.js';
-//import NavBar from './components/NavBar.js'
+
 
 const router = createBrowserRouter([
   {path:"/", element:<Login/>},
+  {path:"/dash-bancas", element:<Dashb_Bancas />},
+  {path:"/dash-tcc", element:<Dashb_Tcc />},
+  {path:"/dash-salas", element:<Dashb_Salas />},
   {path:"/CadastroAluno", element:<CadastroAluno/>},
-  //{path:"/nav", element:<NavBar />}
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
