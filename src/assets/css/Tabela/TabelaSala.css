@@ -1,0 +1,37 @@
+/* Estilos para a tabela customizada */
+.custom-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+.custom-table th {
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 0;
+  border-bottom: 1px solid #000;
+}
+
+.custom-table td {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Estilo para o texto vermelho */
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+/* Estilo para a linha selecionada */
+.selected-row {
+  background-color: #f0f0f0; /* Destaque quando a linha é selecionada */
+}
+
+/* Estilo para hover nas linhas */
+.custom-table tbody tr:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}

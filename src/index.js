@@ -11,6 +11,8 @@ import Dashb_Bancas from './pages/DashBoard/DashBancas.js';
 import Dashb_Tcc from './pages/DashBoard/DashTcc.js';
 import Dashb_Salas from './pages/DashBoard/DashSalas.js';
 import CadastroAluno from './pages/CadastroAluno/CadastroAluno.js';
+import CadastroTcc from './pages/CadastroTcc/CadastroTcc.js'
+import CadastroSala from './pages/CadastroSala/CadastroSala.js';
 
 
 const router = createBrowserRouter([
@@ -19,6 +21,8 @@ const router = createBrowserRouter([
   {path:"/dash-tcc", element:<Dashb_Tcc />},
   {path:"/dash-salas", element:<Dashb_Salas />},
   {path:"/CadastroAluno", element:<CadastroAluno/>},
+  {path:"/CadastroTcc", element:<CadastroTcc/>},
+  {path:"/CadastroSala", element:<CadastroSala/>},
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

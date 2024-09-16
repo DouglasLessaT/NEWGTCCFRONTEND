@@ -1,29 +1,27 @@
-.cadastro-aluno .form-control {
-  border: none; /* Remove as bordas */
-  border-radius: 0; /* Remove bordas arredondadas */
-  box-shadow: none; /* Remove sombra padrão */
-  padding: 10px; /* Padding consistente */
-  transition: border-color 0.3s; /* transiçao */
-  max-width: 100px;
+.container {
+  padding-top: 70px;
 }
 
-.cadastro-aluno .form-control:focus {
-  border-bottom: 1px solid #007bff; /* Cor de destaque ao focar */
-  box-shadow: none; /* Remove sombra ao focar */
-  outline: none; /* Remove outline padrão */
+.form-container {
+  width: 40%;
+  margin-left: 0;
 }
 
-.cadastro-aluno .form-group {
-  margin-bottom: 2px; /* espaçamento entre os campos */
+.custom-input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  font-size: 18px;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
 }
 
-.cadastro-aluno {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 8px;
+.custom-input:focus {
+  border-bottom: 1px solid #000;
 }
 
-.button {
-  margin-left: 100px;
+.mr-4 {
+  margin-right: 70px;
 }
