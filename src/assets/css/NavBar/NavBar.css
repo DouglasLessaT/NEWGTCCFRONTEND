@@ -82,6 +82,11 @@
     width: 350px !important; /* Define a largura desejada */
 }
 
+button a {
+    text-decoration: none;  /* Remove o sublinhado do link */
+    color: inherit;         /* Herda a cor do botão */
+  }
+
 /*.offcanvas-body ul.navbar-nav button {
     width: 320px;
 }*/

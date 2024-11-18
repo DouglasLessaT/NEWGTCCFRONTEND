@@ -75,8 +75,41 @@ function NavBar() {
                     </div>
                     <div class="offcanvas-body">
                         <ul class="teste justify-content-end flex-grow-1 d-flex">
-                            <button type="button" class="btn btn-danger">Cadastro Aluno</button>
-                            <button type="button" class="btn btn-danger">Cadastro Tcc</button>
+                        <button class="btn btn-danger" type="button">
+                                <Link
+                                    to="/cadastroaluno"
+                                    >
+                                    Cadastro Aluno
+                                </Link>
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                                <Link
+                                    to="/cadastrotcc"
+                                    >
+                                    Cadastro Tcc
+                                </Link>
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                                <Link
+                                    to="/cadastrosala"
+                                    >
+                                    Cadastro Sala
+                                </Link>
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                                <Link
+                                    to="/caduser"
+                                    >
+                                    Cadastro Usuário
+                                </Link>
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                                <Link
+                                    to="/"
+                                    >
+                                    Sair
+                                </Link>
+                            </button>
                         </ul>
                     </div>
                 </div>

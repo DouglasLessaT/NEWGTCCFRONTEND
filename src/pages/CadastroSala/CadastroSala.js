@@ -12,7 +12,7 @@ function CadastroSala() {
       <NavBar />
 
       <Container>
-        <h2 className="text-center mt-5">Cadastro de Sala</h2>
+        <h2 className="text-center mt-4">Cadastro de Sala</h2>
 
         {/* Formulário de cadastro de sala */}
         <Form className="mt-4 form-container">

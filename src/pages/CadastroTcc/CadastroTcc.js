@@ -10,7 +10,7 @@ function CadastroTcc() {
     <Container>
             {}
             <NavBar />
-      <h2 className="text-center mt-5">Cadastro tcc</h2>
+      <h2 className="text-center mt-4">Cadastro TCC</h2>
 
       {}
       <Form className="mt-4 form-container">

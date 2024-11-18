@@ -10,7 +10,7 @@ function CadastroAluno() {
     <Container>
             {}
             <NavBar />
-      <h2 className="text-center mt-5">Cadastro Aluno</h2>
+      <h2 className="text-center mt-4">Cadastro Aluno</h2>
 
       {}
       <Form className="mt-4 form-container">

@@ -1,0 +1,54 @@
+body {
+    overflow: auto;
+}
+html {
+    overflow: auto;
+}
+
+.container-caduser{
+    padding: 105px 260px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.buttons button {
+    border-color: rgb(0, 0, 0);
+    margin-bottom: auto;
+}
+
+.container-caduser label {
+    font-weight: bold;
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.pesquisa button{
+    margin-bottom: auto;
+    border-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 941px){
+    .container-caduser{
+        padding: 105px 100px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .container-caduser{
+        padding: 105px 50px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .container-caduser{
+        padding: 105px 15px;
+    }
+}
