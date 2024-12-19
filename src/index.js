@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
+import Home from './pages/Home/Home.js';
 import Login from './pages/Login/Login.js';
 import Dashb_Bancas from './pages/DashBoard/DashBancas.js';
 import Dashb_Tcc from './pages/DashBoard/DashTcc.js';
@@ -17,7 +18,8 @@ import Cadastro_Usuario from './pages/CadastroUsuario/CadastroUsuario.js'
 
 
 const router = createBrowserRouter([
-  {path:"/", element:<Login/>},
+  {path:"/", element:<Home/>},
+  {path:"/login", element:<Login/>},
   {path:"/dash-bancas", element:<Dashb_Bancas />},
   {path:"/dash-tcc", element:<Dashb_Tcc />},
   {path:"/dash-salas", element:<Dashb_Salas />},
