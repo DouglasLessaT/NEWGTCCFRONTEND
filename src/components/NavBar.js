@@ -15,15 +15,15 @@ function NavBar() {
         <nav class="navbar fixed-top">
             <div class="container-fluid">
                 {/*<div class="navbar-brand">*/}
-                <Link to="/dash-bancas">
-                    <img src={logonav} alt="Logo" class="d-inline-block align-text-top" />
+                <Link to="/dashBancas">
+                    <img src={logonav} alt="Logo" className="d-inline-block align-text-top" />
                 </Link>
                 {/*</div>*/}
                 <ul class="navbar-nav ms-auto d-flex flex-row">
                     <li class="nav-item">
                         <Link
                             className={`nav-link ${activeLink === 'BANCAS' ? 'active' : ''}`}
-                            to="/dash-bancas"
+                            to="/dashBancas"
                             onClick={() => handleLinkClick('BANCAS')}
                         >
                             BANCAS
@@ -32,7 +32,7 @@ function NavBar() {
                     <li class="nav-item">
                         <Link
                             className={`nav-link ${activeLink === 'TCCS' ? 'active' : ''}`}
-                            to="/dash-tcc"
+                            to="/dashTcc"
                             onClick={() => handleLinkClick('TCCS')}
                         >
                             TCCS
@@ -41,7 +41,7 @@ function NavBar() {
                     <li class="nav-item">
                         <Link
                             className={`nav-link ${activeLink === 'SALAS' ? 'active' : ''}`}
-                            to="/dash-salas"
+                            to="/dashSalas"
                             onClick={() => handleLinkClick('SALAS')}
                         >
                             SALAS

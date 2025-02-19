@@ -10,7 +10,7 @@ function NavBar() {
             <div class="container-fluid">
                 {/*<div class="navbar-brand">*/}
                 <Link to="/">
-                    <img src={logonav} alt="Logo" class="d-inline-block align-text-top" />
+                    <img src={logonav} alt="Logo" className="d-inline-block align-text-top" />
                 </Link>
                 {/*</div>*/}
                 <button class="btn btn-danger" type="button">

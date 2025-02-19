@@ -2,12 +2,15 @@ import logo from '../../assets/img/logo_login.png';
 import LoginService from "./LoginService";
 import React, { useState } from 'react';
 import '../../assets/css/Login/Login.css';
+import { useNavigate } from "react-router-dom";
+
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -19,6 +22,7 @@ function Login() {
         alert("Login bem-sucedido!");
         // Aqui você pode redirecionar para outra página:
         // Exemplo com React Router: navigate('/dashboard');
+        navigate("/dashBancas");
       },
       (errorMsg) => {
         setError(errorMsg);
